@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(255, 234, 0);
+    column-gap: 20px;
+}
+
+.subcontainer1 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 10px;
+    height: 100px;
+    width: 200px;
+    font-size: 25px;
+}
+
+.amount {
+    height: 150px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(241, 251, 250, 0.853);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 60px;
+    font: bolder;
+}
+
+.fees {
+    color: blue;
+    /* height: 0px; */
+    width: 250px;
+    border: 0px;
+    background-color: rgba(241, 251, 250, 0.853);
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+
+.content {
+    width: 250px;
+    height: 400px;
+}
+
+.know {
+    color: blue;
+    height: 30px;
+    width: 250px;
+    border: 0px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+@media screen and (min-width: 501px)and (max-width: 1000px){
+    .container {
+        background-color:white ;
+    width: 1000px;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.subcontainer1 {
+    margin-bottom: 50px;
+}
+
+}
+@media screen and (min-width: 201px)and (max-width: 500px){
+    .container {
+    width: 500px;
+    height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    }
+.subcontainer1 {
+    margin-bottom: 20px;
+    }
+}
